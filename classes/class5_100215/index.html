@@ -5,12 +5,37 @@
 </head>
 <body>
   <h1>Having fun with my first HTML form</h1>
-  <form action="" method="GET">
-    <label>User Name:</label>
-    <input type="text" value="s" name="username">
-    <label>Password:</label>
-    <input type="password" value="" name="password">
+  <form action="index.html" method="GET">
+  <fieldset>
+  <legend>User Data</legend>
+    <div>
+      <label for="username">User Name:</label>
+      <input type="text" name="username" id="username" placeholder="Put your username here">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" value="" name="password" id="password" placeholder="Put your password here">
+    </div>
+    </fieldset>
+    <fieldset>
+    <div>
+      <label for="comment">Comments:</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+  </fieldset>
+  <div>
+    <input type="radio" name="radio1" id="radio1" name="radio" value="choose1">
+    <label for="radio1">Radio 1</label>
+    <input type="radio" name="radio2" id="radio2" name="radio" value="choose2">
+    <label for="radio2">Radio 2</label>
+    <input type="radio" name="radio3" id="radio3" name="radio" value="choose3">
+    <label for="radio3">Radio 3</label>
+  </div>
+  <div>
+    <label for="accept">Send my data to Google</label>
+    <input type="checkbox" name="accept" id="accept" value="">
     <button type="submit">Login</button>
+  </div>
   </form>
 </body>
 </html>
